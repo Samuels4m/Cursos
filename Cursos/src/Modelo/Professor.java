@@ -15,16 +15,24 @@ public class Professor {
 
     int nDoc;
     String nome;
-    Date nome_nasc;
+    Date data_nasc;
     Date data_cad;
     String resumop;
 
-    public Professor(int nDoc, String nome, Date nome_nasc, Date data_cad, String resumop) {
+    public Professor(int nDoc, String nome, Date data_nasc, Date data_cad, String resumop) {
         this.nDoc = nDoc;
         this.nome = nome;
-        this.nome_nasc = nome_nasc;
+        this.data_nasc = data_nasc;
         this.data_cad = data_cad;
         this.resumop = resumop;
+    }
+
+    public Date getData_nasc() {
+        return data_nasc;
+    }
+
+    public void setData_nasc(Date data_nasc) {
+        this.data_nasc = data_nasc;
     }
 
     public int getnDoc() {
@@ -41,14 +49,6 @@ public class Professor {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public Date getNome_nasc() {
-        return nome_nasc;
-    }
-
-    public void setNome_nasc(Date nome_nasc) {
-        this.nome_nasc = nome_nasc;
     }
 
     public Date getData_cad() {

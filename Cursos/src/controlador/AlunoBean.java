@@ -6,6 +6,7 @@
 package controlador;
 
 import Modelo.Aluno;
+import banco.Banco;
 
 /**
  *
@@ -19,6 +20,22 @@ public class AlunoBean {
         this.aluno = aluno;
     }
 
+    public boolean cadastrarAluno(Aluno aluno) {
+       banco.Banco bd = new Banco();
+       String sql = "INSERT INTO aluno (ndoc, nome, data_nasc, data_cad, mail, id_pais) VALUES (" +
+               aluno.getnDoc() + ", " +
+               "'" + aluno.getNome() + "'" + ", " +
+               "'" + aluno.getData_nasc() + "'" + ", " +
+               "'" + aluno.getData_cad() + "'" + ", " +
+               "'" + aluno.getMail() + "'" + ", " +
+               aluno.getId_pais() +
+               ");";
+       return bd.Insert(sql);
+    }
+
+    /*
+     *Get e Set
+     */
     public Aluno getAluno() {
         return aluno;
     }

@@ -14,8 +14,7 @@ public class Pais {
     int idPais;
     String nomePais;
 
-    public Pais(int idPais, String nomePais) {
-        this.idPais = idPais;
+    public Pais(String nomePais) {
         this.nomePais = nomePais;
     }
 

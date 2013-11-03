@@ -16,7 +16,7 @@ public class Aluno {
     
     int nDoc;
     String nome;
-    Date nome_nasc;
+    Date data_nasc;
     Date data_cad;
     String mail;
     int id_pais;
@@ -24,7 +24,7 @@ public class Aluno {
     public Aluno(int nDoc, String nome, Date nome_nasc, Date data_cad, String mail, int id_pais) {
         this.nDoc = nDoc;
         this.nome = nome;
-        this.nome_nasc = nome_nasc;
+        this.data_nasc = nome_nasc;
         this.data_cad = data_cad;
         this.mail = mail;
         this.id_pais = id_pais;
@@ -46,13 +46,14 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public Date getNome_nasc() {
-        return nome_nasc;
+    public Date getData_nasc() {
+        return data_nasc;
     }
 
-    public void setNome_nasc(Date nome_nasc) {
-        this.nome_nasc = nome_nasc;
+    public void setData_nasc(Date data_nasc) {
+        this.data_nasc = data_nasc;
     }
+
 
     public Date getData_cad() {
         return data_cad;

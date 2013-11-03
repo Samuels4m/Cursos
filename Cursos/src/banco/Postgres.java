@@ -13,28 +13,16 @@ import java.util.logging.Logger;
 
 public class Postgres {
 
+    String drive;
     String url;
     String usuario;
     String senha;
 
     public Postgres() {
-
+        this.drive = "org.postgresql.Driver";
         this.url = "jdbc:postgresql://localhost:5432/Curso";
         this.usuario = "postgres";
         this.senha = "postgres";
 
     }
-
-    public Connection criarConexao() {
-        try {
-            Connection con = DriverManager.getConnection(this.url,
-                    this.usuario, this.senha);
-
-            return con;
-        } catch (SQLException ex) {
-            Logger.getLogger(Postgres.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
-    }
-
 }
