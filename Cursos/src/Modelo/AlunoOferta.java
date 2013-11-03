@@ -14,15 +14,14 @@ import java.sql.Date;
  */
 public class AlunoOferta {
     int nDoc;
-    int idSerial;
-    Date dataIni;
+    int idOferta;
+    //Date dataIni;
     String status;
     String avl;
 
-    public AlunoOferta(int nDoc, int idSerial, Date dataIni, String status, String avl) {
+    public AlunoOferta(int nDoc, int idOferta, String status, String avl) {
         this.nDoc = nDoc;
-        this.idSerial = idSerial;
-        this.dataIni = dataIni;
+        this.idOferta = idOferta;
         this.status = status;
         this.avl = avl;
     }
@@ -35,20 +34,12 @@ public class AlunoOferta {
         this.nDoc = nDoc;
     }
 
-    public int getIdSerial() {
-        return idSerial;
+    public int getIdOferta() {
+        return idOferta;
     }
 
-    public void setIdSerial(int idSerial) {
-        this.idSerial = idSerial;
-    }
-
-    public Date getDataIni() {
-        return dataIni;
-    }
-
-    public void setDataIni(Date dataIni) {
-        this.dataIni = dataIni;
+    public void setIdOferta(int idOferta) {
+        this.idOferta = idOferta;
     }
 
     public String getStatus() {
@@ -66,6 +57,7 @@ public class AlunoOferta {
     public void setAvl(String avl) {
         this.avl = avl;
     }
+
     
     
 }

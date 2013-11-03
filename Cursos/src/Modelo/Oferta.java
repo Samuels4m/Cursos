@@ -12,25 +12,26 @@ import java.sql.Date;
  * @author samuel
  */
 public class Oferta {
-
-    int idCurso;
+    int idOferta;
     Date dateIni;
     int ttl;
     int lim_ins;
+    int idCurso;
 
-    public Oferta(int idCurso, Date dateIni, int ttl, int lim_ins) {
-        this.idCurso = idCurso;
+    public Oferta(int idOferta, Date dateIni, int ttl, int lim_ins, int idCurso) {
+        this.idOferta = idOferta;
         this.dateIni = dateIni;
         this.ttl = ttl;
         this.lim_ins = lim_ins;
-    }
-
-    public int getIdCurso() {
-        return idCurso;
-    }
-
-    public void setIdCurso(int idCurso) {
         this.idCurso = idCurso;
+    }
+
+    public int getIdOferta() {
+        return idOferta;
+    }
+
+    public void setIdOferta(int idOferta) {
+        this.idOferta = idOferta;
     }
 
     public Date getDateIni() {
@@ -55,6 +56,14 @@ public class Oferta {
 
     public void setLim_ins(int lim_ins) {
         this.lim_ins = lim_ins;
+    }
+
+    public int getIdCurso() {
+        return idCurso;
+    }
+
+    public void setIdCurso(int idCurso) {
+        this.idCurso = idCurso;
     }
 
 }

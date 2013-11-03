@@ -14,13 +14,12 @@ import java.sql.Date;
 public class ProfessorOferta {
 
     int ndoc;
-    int idSerial;
-    Date dateIni;
+    int idOferta;
 
-    public ProfessorOferta(int ndoc, int idSerial, Date dateIni) {
+    // Date dateIni;
+    public ProfessorOferta(int ndoc, int idOferta) {
         this.ndoc = ndoc;
-        this.idSerial = idSerial;
-        this.dateIni = dateIni;
+        this.idOferta = idOferta;
     }
 
     public int getNdoc() {
@@ -31,21 +30,12 @@ public class ProfessorOferta {
         this.ndoc = ndoc;
     }
 
-    public int getIdSerial() {
-        return idSerial;
+    public int getIdOferta() {
+        return idOferta;
     }
 
-    public void setIdSerial(int idSerial) {
-        this.idSerial = idSerial;
+    public void setIdOferta(int idOferta) {
+        this.idOferta = idOferta;
     }
 
-    public Date getDateIni() {
-        return dateIni;
-    }
-
-    public void setDateIni(Date dateIni) {
-        this.dateIni = dateIni;
-    }
-    
-    
 }
