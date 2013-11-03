@@ -25,7 +25,6 @@ public class PaisBean {
         String sql = "INSERT INTO pais (npais) VALUES ("
                 + "'" + pais.getNomePais()
                 + "');";
-        System.out.println("oi");
         return bd.Insert(sql);
     }
 

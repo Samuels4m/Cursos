@@ -20,7 +20,7 @@ public class AlunoBean {
         this.aluno = aluno;
     }
 
-    public boolean cadastrarAluno(Aluno aluno) {
+    public boolean insertAluno(Aluno aluno) {
        banco.Banco bd = new Banco();
        String sql = "INSERT INTO aluno (ndoc, nome, data_nasc, data_cad, mail, id_pais) VALUES (" +
                aluno.getnDoc() + ", " +
